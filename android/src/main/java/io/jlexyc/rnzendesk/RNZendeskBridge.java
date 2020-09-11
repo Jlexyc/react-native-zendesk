@@ -38,12 +38,12 @@ import java.util.Map;
 
 import java.io.Serializable;
 
-public class RNZenDeskSupport2Module extends ReactContextBaseJavaModule {
+public class RNZendeskModule extends ReactContextBaseJavaModule {
 
   private static final int REQUEST_CODE = 304869;
   private static ReactApplicationContext mainContext = null;
 
-  public RNZenDeskSupport2Module(final ReactApplicationContext reactContext) {
+  public RNZendeskModule(final ReactApplicationContext reactContext) {
     super(reactContext);
     mainContext = reactContext;
     reactContext.addActivityEventListener(new BaseActivityEventListener() {
@@ -66,7 +66,7 @@ public class RNZenDeskSupport2Module extends ReactContextBaseJavaModule {
 
   @Override
   public String getName() {
-    return "RNZenDeskSupport2";
+    return "RNZendeskModule";
   }
 
   private static long[] toLongArray(ArrayList<?> values) {

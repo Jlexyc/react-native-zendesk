@@ -1,5 +1,5 @@
 //
-//  RNZenDeskSupport2.m
+//  RNZendeskBridge.m
 //  Created by Oleksii Kozulin
 //  17/10/2018
 

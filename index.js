@@ -6,7 +6,7 @@ import {
 	Platform,
 } from 'react-native';
 
-const Emitter = new NativeEventEmitter(NativeModules.RNZendesk);
+const Emitter = new NativeEventEmitter(NativeModules.RNZendeskBridge);
 
 const zendeskEvents = {
 	submitRequestCompletedSet: (callback) => {
@@ -33,6 +33,6 @@ const zendeskEvents = {
 
 
 module.exports = {
-	ZendeskSupport: NativeModules.RNZendesk || {},
+	ZendeskSupport: NativeModules.RNZendeskBridge || {},
 	zendeskEvents: zendeskEvents,
 }

@@ -1,5 +1,5 @@
 //
-//  RNZenDeskSupport2.h
+//  RNZendeskBridge.h
 //  Created by Oleksii Kozulin
 //  17/10/2018
 

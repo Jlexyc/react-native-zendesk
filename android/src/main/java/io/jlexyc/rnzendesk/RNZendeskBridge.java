@@ -4,7 +4,7 @@
  * https://github.com/jlexyc/react-native-zendesk-support2
  */
 
-package com.jlexyc.rnzendesk;
+package io.jlexyc.rnzendesk;
 
 import android.content.Intent;
 import android.app.Activity;
@@ -38,12 +38,12 @@ import java.util.Map;
 
 import java.io.Serializable;
 
-public class RNZendeskModule extends ReactContextBaseJavaModule {
+public class RNZendeskBridge extends ReactContextBaseJavaModule {
 
   private static final int REQUEST_CODE = 304869;
   private static ReactApplicationContext mainContext = null;
 
-  public RNZendeskModule(final ReactApplicationContext reactContext) {
+  public RNZendeskBridge(final ReactApplicationContext reactContext) {
     super(reactContext);
     mainContext = reactContext;
     reactContext.addActivityEventListener(new BaseActivityEventListener() {
@@ -66,7 +66,7 @@ public class RNZendeskModule extends ReactContextBaseJavaModule {
 
   @Override
   public String getName() {
-    return "RNZendeskModule";
+    return "RNZendeskBridge";
   }
 
   private static long[] toLongArray(ArrayList<?> values) {

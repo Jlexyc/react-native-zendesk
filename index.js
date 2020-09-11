@@ -6,7 +6,7 @@ import {
 	Platform,
 } from 'react-native';
 
-const Emitter = new NativeEventEmitter(NativeModules.RNZenDeskSupport2);
+const Emitter = new NativeEventEmitter(NativeModules.RNZendesk);
 
 const zendeskEvents = {
 	submitRequestCompletedSet: (callback) => {

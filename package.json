@@ -3,21 +3,11 @@
   "version": "2.1.0",
   "description": "Zendesk SDK for React Native.",
   "main": "index.js",
-  "scripts": {
-    "build": "rimraf lib && tsc",
-    "lint": "eslint \"src/**/*.ts\"",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "prepare": "yarn build",
-    "prepublishOnly": "yarn lint",
-    "preversion": "yarn lint",
-    "version": "yarn format && git add -A src",
-    "postversion": "git push && git push --tags"
-  },
   "files": [
-    "lib/**/*",
     "ios/**/*",
     "android/**/*",
-    "*.podspec"
+    "*.podspec",
+    "*"
   ],
   "homepage": "https://github.com/jlexyc/react-native-zendesk#readme",
   "repository": {

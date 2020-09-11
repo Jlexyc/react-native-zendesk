@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9BEDAFDE208E90CB000BFECF /* RNZendesk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEDAFDD208E90CB000BFECF /* RNZendesk.swift */; };
 		9BEDAFF4208E954E000BFECF /* RNZendeskBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEDAFF3208E954E000BFECF /* RNZendeskBridge.m */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +35,6 @@
 
 /* Begin PBXFileReference section */
 		9BEDAFDA208E90CB000BFECF /* libRNZendesk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNZendesk.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BEDAFDD208E90CB000BFECF /* RNZendesk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNZendesk.swift; sourceTree = "<group>"; };
-		9BEDAFF1208E954D000BFECF /* RNZendesk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNZendesk-Bridging-Header.h"; sourceTree = "<group>"; };
 		9BEDAFF2208E954E000BFECF /* RNZendeskBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNZendeskBridge.h; sourceTree = "<group>"; };
 		9BEDAFF3208E954E000BFECF /* RNZendeskBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNZendeskBridge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,10 +69,8 @@
 		9BEDAFDC208E90CB000BFECF /* RNZendesk */ = {
 			isa = PBXGroup;
 			children = (
-				9BEDAFDD208E90CB000BFECF /* RNZendesk.swift */,
 				9BEDAFF2208E954E000BFECF /* RNZendeskBridge.h */,
 				9BEDAFF3208E954E000BFECF /* RNZendeskBridge.m */,
-				9BEDAFF1208E954D000BFECF /* RNZendesk-Bridging-Header.h */,
 			);
 			path = RNZendesk;
 			sourceTree = "<group>";
@@ -168,7 +163,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BEDAFDE208E90CB000BFECF /* RNZendesk.swift in Sources */,
 				9BEDAFF4208E954E000BFECF /* RNZendeskBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

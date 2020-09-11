@@ -1,4 +1,4 @@
-package io.dcvz.rnzendesk;
+package com.jlexyc.rnzendesk;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;

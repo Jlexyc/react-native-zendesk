@@ -1,13 +1,11 @@
 //
-//  RNZendeskBridge.h
-//  RNZendesk
-//
-//  Created by David Chavez on 24.04.18.
-//  Copyright © 2018 David Chavez. All rights reserved.
-//
+//  RNZenDeskSupport2.h
+//  Created by Oleksii Kozulin
+//  17/10/2018
 
-#import <Foundation/Foundation.h>
+#import "RCTEventEmitter.h"
+#import <React/RCTBridgeModule.h>
 
-@interface RNZendeskBridge : NSObject
+@interface RNZendeskBridge : RCTEventEmitter <RCTBridgeModule>
 
 @end

@@ -62,13 +62,13 @@ RCT_EXPORT_METHOD(callSupport:(NSDictionary *)fields) {
         
         for (NSString* key in customFields) {
             id value = [customFields objectForKey:key];
-            [customFieldArray addObject: [[ZDKCustomField alloc] initWithFieldId:@(key.longLongValue) andValue:value]];
+            [customFieldArray addObject: [[ZDKCustomField alloc] initWithFieldId:@(key.longLongValue) value:value]];
         }
 
         ZDKRequestUiConfiguration * config = [ZDKRequestUiConfiguration new];
         config.subject = subject;
         config.tags = tags;
-        config.fields = customFieldArray;
+        config.customFields = customFieldArray;
         UIViewController *vcToShow = [ZDKRequestUi buildRequestUiWith:@[config]];
         vcToShow.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissViewController:)];
         
@@ -90,13 +90,13 @@ RCT_EXPORT_METHOD(ticketsList:(NSDictionary *)fields) {
         
         for (NSString* key in customFields) {
             id value = [customFields objectForKey:key];
-            [customFieldArray addObject: [[ZDKCustomField alloc] initWithFieldId:@(key.longLongValue) andValue:value]];
+            [customFieldArray addObject: [[ZDKCustomField alloc] initWithFieldId:@(key.longLongValue) value:value]];
         }
         
         ZDKRequestUiConfiguration * config = [ZDKRequestUiConfiguration new];
         config.subject = subject;
         config.tags = tags;
-        config.fields = customFieldArray;
+        config.customFields = customFieldArray;
         
         UIViewController *vcToShow = [ZDKRequestUi buildRequestListWith:@[config]];
         vcToShow.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissViewController:)];
